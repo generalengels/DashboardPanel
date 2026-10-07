@@ -1,0 +1,687 @@
+/* multilingual-language-selector-v203:start */
+.drawer-language-block{
+  width:100%;
+}
+.drawer-language-trigger{
+  grid-template-columns:32px minmax(0,1fr) auto;
+}
+.drawer-language-current{
+  min-width:0;
+  max-width:112px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:5px;
+  color:#dbe7f7;
+  font-size:10.5px;
+  font-weight:650;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.drawer-language-right{
+  min-width:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  white-space:nowrap;
+}
+.drawer-language-right .drawer-sub-chevron{
+  flex:0 0 auto;
+}
+.drawer-language-name{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.drawer-language-current > span:last-child{
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.drawer-language-flag{
+  flex:0 0 auto;
+  font-size:16px;
+  line-height:1;
+}
+.drawer-language-kurdish-flag{
+  width:24px;
+  height:16px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-radius:2px;
+  box-shadow:0 0 0 1px rgba(255,255,255,.22);
+}
+.drawer-language-kurdish-flag svg{
+  display:block;
+  width:24px;
+  height:16px;
+}
+.drawer-language-list{
+  margin:3px 6px 7px 41px;
+  padding:5px;
+  border:1px solid rgba(54,137,235,.28);
+  border-radius:9px;
+  background:rgba(2,30,64,.78);
+  display:grid;
+  gap:2px;
+  max-height:310px;
+  overflow:auto;
+}
+.drawer-language-option{
+  width:100%;
+  min-height:32px;
+  padding:5px 8px;
+  border:0;
+  border-radius:7px;
+  background:transparent;
+  color:#f5f8fd;
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr);
+  align-items:center;
+  gap:7px;
+  text-align:left;
+  font-size:11px;
+  font-weight:600;
+}
+.drawer-language-option:hover,
+.drawer-language-option.active{
+  background:rgba(33,116,213,.34);
+}
+.drawer-language-option.active{
+  box-shadow:inset 2px 0 0 #4da3ff;
+}
+.drawer-language-trigger[aria-expanded="true"] .drawer-sub-chevron{
+  transform:rotate(90deg);
+}
+@media(max-width:520px){
+  .drawer-language-trigger{
+    grid-template-columns:30px minmax(0,1fr) auto;
+  }
+  .drawer-language-current{
+    max-width:92px;
+    font-size:10px;
+  }
+  .drawer-language-list{
+    margin-left:38px;
+    max-height:270px;
+  }
+}
+/* multilingual-language-selector-v203:end */
+
+
+/* language-flag-mobile-fix-v208:start */
+.drawer-language-trigger{
+  grid-template-columns:32px minmax(0,1fr) auto!important;
+}
+.drawer-language-current{
+  max-width:none;
+  overflow:visible;
+  flex:0 0 auto;
+}
+.drawer-language-right{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:8px!important;
+  min-width:max-content!important;
+}
+.drawer-language-right .drawer-language-flag{
+  display:inline-flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+@media(max-width:520px){
+  #app > .app + .drawer-backdrop + .drawer .drawer-language-trigger,
+  .route-home + .drawer-backdrop + .drawer .drawer-language-trigger{
+    grid-template-columns:27px minmax(0,1fr) auto!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-language-right,
+  .route-home + .drawer-backdrop + .drawer .drawer-language-right{
+    min-width:46px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:8px!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-language-current,
+  .route-home + .drawer-backdrop + .drawer .drawer-language-current{
+    max-width:none!important;
+    overflow:visible!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-language-flag,
+  .route-home + .drawer-backdrop + .drawer .drawer-language-flag{
+    display:inline-flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    flex:0 0 auto!important;
+  }
+}
+/* language-flag-mobile-fix-v208:end */
+
+
+/* customer-return-state-v209:start */
+.route-customers .customers-table-card .data-table tbody tr.customer-selected-row{
+  background:#e7f0ff;
+  box-shadow:inset 4px 0 0 var(--blue), inset 0 0 0 1px rgba(36,72,242,.16);
+}
+.route-customers .customers-table-card .data-table tbody tr.customer-selected-row:hover{
+  background:#e7f0ff;
+}
+/* customer-return-state-v209:end */
+
+
+/* drawer-shop-user-v211:start */
+.drawer-shop-user{
+  width:100%;
+  min-height:40px;
+  padding:4px 8px 5px 6px;
+  display:grid;
+  grid-template-columns:32px minmax(0,1fr);
+  align-items:center;
+  gap:9px;
+  color:#f5f8fd;
+}
+.drawer-shop-user-icon{
+  width:32px;
+  height:32px;
+  border-radius:8px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(145deg,#0a79ea,#0863c9);
+  color:#fff;
+}
+.drawer-shop-user-icon .svg-icon{
+  width:19px;
+  height:19px;
+  stroke-width:1.9;
+}
+.drawer-shop-user strong{
+  min-width:0;
+  font-size:13px;
+  line-height:1;
+  font-weight:780;
+}
+.drawer-shop-user-divider{
+  width:100%;
+  height:1px;
+  margin:2px 0 10px;
+  background:rgba(153,177,207,.28);
+}
+@media(max-width:520px){
+  .drawer-shop-user{
+    min-height:34px;
+    padding:2px 7px 3px 5px;
+    grid-template-columns:27px minmax(0,1fr);
+    gap:8px;
+  }
+  .drawer-shop-user-icon{
+    width:27px;
+    height:27px;
+    border-radius:7px;
+  }
+  .drawer-shop-user-icon .svg-icon{
+    width:17px;
+    height:17px;
+  }
+  .drawer-shop-user strong{
+    font-size:11.5px;
+  }
+  .drawer-shop-user-divider{
+    margin:4px 0 8px;
+  }
+}
+/* drawer-shop-user-v211:end */
+
+
+/* language-list-and-kurdish-flag-v212:start */
+.drawer-language-flag{
+  width:24px;
+  height:18px;
+  display:inline-grid!important;
+  place-items:center;
+  flex:0 0 24px!important;
+  line-height:1;
+  overflow:visible;
+}
+.drawer-language-emoji-flag{
+  font-size:17px;
+}
+.drawer-language-kurdish-flag{
+  width:24px;
+  height:18px;
+  border-radius:0;
+  box-shadow:none;
+  overflow:visible;
+}
+.drawer-language-kurdish-flag svg{
+  width:21px;
+  height:16px;
+  display:block;
+  overflow:visible;
+  filter:drop-shadow(0 1px 1px rgba(0,0,0,.16));
+}
+.drawer-language-list{
+  max-height:314px;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  scrollbar-gutter:stable;
+}
+@media(hover:none), (pointer:coarse){
+  .drawer-language-option:hover:not(.active){
+    background:transparent;
+  }
+}
+@media(max-width:520px){
+  .drawer-language-list{
+    max-height:280px!important;
+  }
+}
+/* language-list-and-kurdish-flag-v212:end */
+
+
+/* kurdish-emoji-shape-v214:start */
+.drawer-language-kurdish-flag{
+  width:24px!important;
+  height:18px!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  overflow:visible!important;
+  flex:0 0 24px!important;
+}
+.drawer-language-kurdish-flag svg{
+  width:23px!important;
+  height:17px!important;
+  display:block!important;
+  overflow:visible!important;
+  transform:rotate(-1.2deg);
+  transform-origin:center;
+  filter:drop-shadow(0 1px 1px rgba(0,0,0,.22));
+}
+/* kurdish-emoji-shape-v214:end */
+
+
+/* kurdish-emoji-shape-v215:start */
+.drawer-language-kurdish-flag{
+  width:24px!important;
+  height:18px!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  overflow:visible!important;
+  flex:0 0 24px!important;
+}
+.drawer-language-kurdish-flag svg{
+  width:24px!important;
+  height:18px!important;
+  display:block!important;
+  overflow:visible!important;
+  transform:none!important;
+  filter:drop-shadow(0 1px 1px rgba(0,0,0,.24));
+}
+/* kurdish-emoji-shape-v215:end */
+
+
+/* shop-login-password-v218:start */
+.drawer-shop-user{
+  grid-template-columns:32px minmax(0,1fr) 18px;
+  border:0;
+  background:transparent;
+  font:inherit;
+  text-align:left;
+  cursor:pointer;
+}
+.drawer-shop-user:hover,
+.drawer-shop-user.active{
+  background:rgba(33,116,213,.16);
+  border-radius:8px;
+}
+.drawer-shop-user-chevron{
+  width:18px;
+  height:18px;
+  display:grid;
+  place-items:center;
+  color:#9bb0c8;
+}
+.drawer-shop-user-chevron .svg-icon{
+  width:15px;
+  height:15px;
+}
+.shop-login-page{
+  min-height:100vh;
+  min-height:100dvh;
+  padding:24px;
+  display:grid;
+  place-items:center;
+  background:#f4f7fb;
+}
+.shop-login-card{
+  width:min(100%,420px);
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 16px 48px rgba(6,18,40,.12);
+}
+.shop-login-brand{
+  text-align:center;
+  margin-bottom:24px;
+}
+.shop-login-logo{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.shop-login-x{
+  display:block;
+  width:111px;
+  height:111px;
+}
+.shop-login-form{
+  display:grid;
+  gap:16px;
+}
+.shop-login-password-shell{
+  position:relative;
+}
+.shop-login-password-shell .control{
+  position:relative;
+  z-index:1;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  caret-color:transparent;
+}
+.shop-login-password-display{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  padding:0 13px;
+  color:#1c2434;
+  font:inherit;
+  line-height:1;
+  white-space:pre;
+  overflow:hidden;
+  pointer-events:none;
+}
+.shop-login-password-shell:focus-within .shop-login-password-display::after{
+  content:"";
+  display:inline-block;
+  width:2px;
+  height:24px;
+  margin-left:2px;
+  background:#1c2434;
+  border-radius:1px;
+  flex:0 0 auto;
+  animation:shopLoginCaretBlink 1s steps(1,end) infinite;
+}
+@keyframes shopLoginCaretBlink{
+  0%,49%{opacity:1}
+  50%,100%{opacity:0}
+}
+.route-shop .shop-password-card{
+  max-width:760px;
+  margin:0 auto;
+}
+.route-shop .shop-password-form{
+  display:grid;
+  gap:22px;
+}
+.route-shop .shop-password-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.route-shop .shop-password-actions{
+  display:flex;
+  justify-content:flex-end;
+}
+.route-shop .shop-password-actions .btn{
+  min-width:150px;
+}
+
+@media(max-width:700px){
+  .route-shop .shop-password-grid{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:520px){
+  .drawer-shop-user{
+    grid-template-columns:27px minmax(0,1fr) 17px;
+  }
+  .shop-login-page{
+    padding:16px;
+  }
+  .shop-login-card{
+    padding:22px 18px;
+    border-radius:14px;
+  }
+  .route-shop .shop-password-actions .btn{
+    width:100%;
+  }
+}
+/* shop-login-password-v218:end */
+
+
+/* shop-password-validation-v219:start */
+.route-shop .shop-password-rule{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.3;
+  font-weight:600;
+}
+.route-shop .shop-password-rule.invalid{
+  color:#c92a2a;
+}
+.route-shop .shop-password-rule.valid{
+  color:#0a8f45;
+}
+.route-shop .control.shop-password-invalid{
+  border-color:#dc3545;
+  box-shadow:0 0 0 2px rgba(220,53,69,.08);
+}
+.route-shop .control.shop-password-valid{
+  border-color:#2ca56c;
+}
+/* shop-password-validation-v219:end */
+
+
+/* drawer-spacing-typography-v227:start */
+@media(max-width:520px){
+  /* More generous vertical rhythm in the left menu.
+     Icons, colors and horizontal positioning stay unchanged. */
+  #app > .app + .drawer-backdrop + .drawer .drawer-shop-user{
+    min-height:42px!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-shop-user strong{
+    font-size:13px!important;
+  }
+
+  #app > .app + .drawer-backdrop + .drawer .drawer-primary,
+  #app > .app + .drawer-backdrop + .drawer .drawer-section-title{
+    min-height:42px!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-primary strong,
+  #app > .app + .drawer-backdrop + .drawer .drawer-section-title strong{
+    font-size:14.5px!important;
+  }
+
+  #app > .app + .drawer-backdrop + .drawer .drawer-sub-link{
+    min-height:38px!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-sub-label{
+    font-size:12.5px!important;
+  }
+}
+/* drawer-spacing-typography-v227:end */
+
+
+/* wettscheine-compact-status-grid-v228:start */
+@media(max-width:520px){
+  .route-coupons .toggle-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+    margin-bottom:12px!important;
+  }
+  .route-coupons .toggle-card{
+    min-height:38px!important;
+    padding:5px 8px!important;
+    gap:8px!important;
+    border-radius:8px!important;
+  }
+}
+/* wettscheine-compact-status-grid-v228:end */
+
+
+/* wettscheine-status-visual-v229:start */
+@media(max-width:520px){
+  .route-coupons .toggle-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    margin-bottom:12px!important;
+  }
+  .route-coupons .toggle-card.status-toggle{
+    min-height:46px!important;
+    padding:5px 8px!important;
+    display:grid!important;
+    grid-template-columns:38px 32px minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:8px!important;
+    border-radius:9px!important;
+    background:#fff!important;
+  }
+  .route-coupons .toggle-card.status-toggle:nth-child(5){
+    grid-column:1/-1!important;
+    justify-self:center!important;
+    width:calc(50% - 4px)!important;
+  }
+  .route-coupons .status-toggle-icon{
+    width:32px!important;
+    height:32px!important;
+    border-radius:8px!important;
+    display:grid!important;
+    place-items:center!important;
+  }
+  .route-coupons .status-toggle-icon .svg-icon{
+    width:19px!important;
+    height:19px!important;
+  }
+  .route-coupons .status-toggle-label{
+    min-width:0!important;
+    color:#111827!important;
+    font-size:13px!important;
+    line-height:1!important;
+    font-weight:560!important;
+    white-space:nowrap!important;
+  }
+  .route-coupons .status-0 .status-toggle-icon{
+    color:#1769e8!important;
+    background:#edf3ff!important;
+  }
+  .route-coupons .status-1 .status-toggle-icon{
+    color:#1fac55!important;
+    background:#ebf9ef!important;
+  }
+  .route-coupons .status-2 .status-toggle-icon{
+    color:#df2d35!important;
+    background:#fff0f1!important;
+  }
+  .route-coupons .status-3 .status-toggle-icon{
+    color:#e6531b!important;
+    background:#fff2e9!important;
+  }
+  .route-coupons .status-4 .status-toggle-icon{
+    color:#7040e8!important;
+    background:#f2edff!important;
+  }
+}
+/* wettscheine-status-visual-v229:end */
+
+
+/* topbar-dark-area-v230:start */
+@media(max-width:520px){
+  /* Increase only the visible dark top-banner area by 5px total.
+     Keep all banner contents at their exact existing viewport position. */
+  #app > .app .topbar{
+    top:-14.5px!important;
+    height:72.5px!important;
+  }
+  #app > .app .topbar-main{
+    transform:translateY(17.5px)!important;
+  }
+}
+/* topbar-dark-area-v230:end */
+
+
+/* mobile-language-menu-viewport-fix-v231:start */
+@media(max-width:520px){
+  /* Keep the opened language selector inside the visible mobile area.
+     The language list itself scrolls instead of extending behind Safari's bottom UI. */
+  #app > .app + .drawer-backdrop + .drawer .drawer-language-list{
+    max-height:190px!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+  }
+  #app > .app + .drawer-backdrop + .drawer .drawer-language-list::-webkit-scrollbar{
+    display:none!important;
+  }
+}
+/* mobile-language-menu-viewport-fix-v231:end */
+
+
+/* shop-login-password-spacing-v232:start */
+.shop-login-form{
+  row-gap:16px;
+}
+.shop-login-form .field{
+  margin:0;
+  min-height:0;
+}
+.shop-login-password-shell{
+  height:46px;
+  min-height:46px;
+  max-height:46px;
+}
+.shop-login-password-shell .control,
+.shop-login-password-display{
+  height:46px;
+  min-height:46px;
+  max-height:46px;
+}
+.shop-login-form > .btn{
+  margin:0;
+}
+.shop-login-password-shell + .shop-login-password-hint,
+.shop-login-password-shell + small{
+  margin:4px 0 0;
+  line-height:1.25;
+}
+@media(max-width:520px){
+  .shop-login-password-shell,
+  .shop-login-password-shell .control,
+  .shop-login-password-display{
+    height:46px!important;
+    min-height:46px!important;
+    max-height:46px!important;
+  }
+}
+/* shop-login-password-spacing-v232:end */
+
+
+/* login-x-brand-v233:start */
+.shop-login-brand{
+  margin-bottom:26px;
+}
+@media(max-width:520px){
+  .shop-login-x{
+    width:103px;
+    height:103px;
+  }
+}
+/* login-x-brand-v233:end */

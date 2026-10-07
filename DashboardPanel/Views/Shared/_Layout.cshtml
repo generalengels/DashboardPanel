@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<!-- SAYFA: index.html | Ana Sayfa – Genel Bakış -->
+<html lang="en">
+
+<head>
+    <!-- HEAD: karakter seti, viewport, tema rengi, SEO, stil dosyaları -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#061228">
+    <meta name="description"
+          content="BetXsoft Shop Admin – Kunden, Zahlungen, Wettscheine und Umsätze zentral verwalten.">
+    <title>BetXsoft Shop Admin</title>
+    <script type="importmap"></script>
+
+    <link rel="stylesheet" href="~/css/styles.css?v=240">
+    <link rel="stylesheet" href="~/css/styles-forms.css?v=240">
+    <link rel="stylesheet" href="~/css/styles-navigation.css?v=241">
+    <link rel="stylesheet" href="~/css/styles-coupons-turnover.css?v=240">
+    <link rel="stylesheet" href="~/css/styles-customers-transactions.css?v=240">
+    <link rel="stylesheet" href="~/css/styles-languages-shop.css?v=240">
+</head>
+
+<body data-route="home">
+    <!-- BODY: data-route ile aktif sayfa rotası -->
+    <!-- APP: uygulama kökü (header + main + footer + drawer) -->
+    <div id="app" aria-live="polite">
+        <div class="app route-home">
+            <!-- HEADER – Üst bar: marka, mobil toplam bakiye, bakiye, menü butonu -->
+            <header class="topbar">
+                <div class="topbar-main">
+                    <div class="brand-zone">
+                        <button class="brand" data-go="home" aria-label="Ana sayfa">
+                            Bet<span class="brand-x">X</span>soft<small>Casino · Spor · Bahis</small>
+                        </button>
+                        <div class="mobile-total">
+                            <small>Toplam Bakiye</small><strong>368.161,00</strong>
+                        </div>
+                    </div><button class="home-button" data-go="home" aria-label="Ana sayfa">⌂</button>
+                    <div class="top-spacer"></div>
+                    <div class="balance">
+                        <span class="balance-copy"><small>Bakiye</small><strong>14.857,00</strong></span>
+                    </div><button class="menu-button" data-drawer="" aria-label="Menüyü Aç">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                             stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M3 6h18M3 12h18M3 18h18"></path>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            @RenderBody()
+
+            <!-- FOOTER – Telif / alt bilgi -->
+            <footer class="footer">
+                <span>© 2022 BetXsoft. Tüm hakları saklıdır.</span>
+            </footer>
+        </div>
+        <!-- DRAWER BACKDROP – Yan menü açıkken arka plan karartma -->
+        <div class="drawer-backdrop" data-drawer-close=""></div>
+        <!-- SIDEBAR (DRAWER) – Sol yan navigasyon menüsü -->
+        <aside class="drawer">
+            <!-- Drawer navigasyon: mağaza, hızlı işlemler, bölümler, dil, QR -->
+            <nav class="drawer-nav">
+
+                <button class="drawer-shop-user" type="button" data-go="shop" aria-label="Mağaza">
+                    <span class="drawer-shop-user-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24"
+                             aria-hidden="true" fill="none" stroke="currentcolor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="7.5" r="4" fill="currentColor" stroke="none"></circle>
+                            <path d="M4.5 21c.6-4.7 3.2-7 7.5-7s6.9 2.3 7.5 7H4.5Z" fill="currentColor"
+                                  stroke="none"></path>
+                        </svg>
+                    </span> <strong>Mağaza</strong> <span class="drawer-shop-user-chevron"
+                                                          aria-hidden="true">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="drawer-shop-user-divider" aria-hidden="true"></div>
+
+                <button class="drawer-primary deposit" data-go="deposit-1">
+                    <span class="drawer-primary-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M12 4v14M6.5 12.5 12 18l5.5-5.5"></path>
+                        </svg>
+                    </span><strong>Yatırma</strong><span class="drawer-primary-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                             stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+
+                <button class="drawer-primary payout" data-go="payout-1">
+                    <span class="drawer-primary-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M12 20V6M6.5 11.5 12 6l5.5 5.5"></path>
+                        </svg>
+                    </span><strong>Çekim</strong><span class="drawer-primary-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                             stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+
+                <button class="drawer-primary turnover" data-go="turnover">
+                    <span class="drawer-primary-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M5 20V12h3v8H5Zm6 0V6h3v14h-3Zm6 0V9h3v11h-3Z" fill="currentColor"
+                                  stroke="none"></path>
+                        </svg>
+                    </span><strong>Muhasebe</strong><span class="drawer-primary-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                             stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="drawer-section-title">
+                    <span class="drawer-section-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24"
+                             aria-hidden="true" fill="none" stroke="currentcolor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 6h11M9 12h11M9 18h11"></path>
+                            <circle cx="4" cy="6" r="1.2" fill="currentColor" stroke="none"></circle>
+                            <circle cx="4" cy="12" r="1.2" fill="currentColor" stroke="none"></circle>
+                            <circle cx="4" cy="18" r="1.2" fill="currentColor" stroke="none"></circle>
+                        </svg>
+                    </span><strong>Diğer Bölümler</strong>
+                </div><button class="drawer-sub-link" data-go="coupons">
+                    <span class="drawer-sub-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                             stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M5 4h14a1 1 0 0 1 1 1v4a3 3 0 0 0 0 6v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-4a3 3 0 0 0 0-6V5a1 1 0 0 1 1-1Z">
+                            </path>
+                            <path d="M12 7v2m0 2v2m0 2v2"></path>
+                        </svg>
+                    </span><span class="drawer-sub-label">Bahis Özeti</span><span class="drawer-sub-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button> <button class="drawer-sub-link" data-go="create-user">
+                    <span class="drawer-sub-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <circle cx="9" cy="7.2" r="3.5" fill="currentColor" stroke="none"></circle>
+                            <path d="M3 20c.5-4.1 2.7-6.1 6-6.1 2.2 0 3.9.8 4.9 2.4" fill="currentColor"
+                                  stroke="none"></path>
+                            <path d="M18 10v7M14.5 13.5h7"></path>
+                        </svg>
+                    </span><span class="drawer-sub-label">Müşteri Yönetimi</span><span class="drawer-sub-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button> <button class="drawer-sub-link" data-go="customers">
+                    <span class="drawer-sub-icon">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <circle cx="12" cy="7.5" r="4" fill="currentColor" stroke="none"></circle>
+                            <path d="M4.5 21c.6-4.7 3.2-7 7.5-7s6.9 2.3 7.5 7H4.5Z" fill="currentColor"
+                                  stroke="none"></path>
+                        </svg>
+                    </span><span class="drawer-sub-label">Müşteri Arama</span><span class="drawer-sub-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="drawer-menu-divider" aria-hidden="true"></div><button class="drawer-sub-link"
+                                                                                  data-go="deposit-transactions">
+                    <span class="drawer-sub-icon">
+                        <svg class="svg-icon"
+                             viewbox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentcolor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 9h15a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h9">
+                            </path>
+                            <path d="M16 13h5v5h-5a2.5 2.5 0 0 1 0-5ZM14 2v7M10.5 5.5 14 9l3.5-3.5"></path>
+                        </svg>
+                    </span><span class="drawer-sub-label">Yatırma İşlemleri</span><span class="drawer-sub-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button> <button class="drawer-sub-link"
+                                  data-go="payout-transactions">
+                    <span class="drawer-sub-icon">
+                        <svg class="svg-icon"
+                             viewbox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentcolor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 9h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h8">
+                            </path>
+                            <path d="M15 13h5v5h-5a2.5 2.5 0 0 1 0-5Z"></path>
+                            <path d="M12 10 19 3M14 3h5v5"></path>
+                        </svg>
+                    </span><span class="drawer-sub-label">Çekim İşlemleri</span><span class="drawer-sub-chevron">
+                        <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                             fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="m9 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="drawer-menu-divider" aria-hidden="true"></div>
+
+                <div class="drawer-language-block">
+                    <button class="drawer-sub-link drawer-language-trigger" type="button"
+                            data-language-menu="" aria-expanded="false">
+                        <span class="drawer-sub-icon">
+                            <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                                 stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M3 12h18M12 3c2.2 2.5 3.3 5.5 3.3 9S14.2 18.5 12 21M12 3C9.8 5.5 8.7 8.5 8.7 12S9.8 18.5 12 21">
+                                </path>
+                            </svg>
+                        </span> <span class="drawer-sub-label">Diller</span> <span class="drawer-language-right" data-no-i18n="">
+                            <span class="drawer-language-current">
+                                <span class="drawer-language-flag drawer-language-emoji-flag"
+                                      aria-hidden="true">🇹🇷</span>
+                            </span> <span class="drawer-sub-chevron">
+                                <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                                     stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path d="m9 5 7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <!-- Drawer alt: Telegram QR ve marka -->
+                <div class="drawer-footer">
+                    <div class="drawer-footer-rule" aria-hidden="true"></div><a class="drawer-qr-link"
+                                                                                href="https://t.me/BETXSOFT" target="_blank" rel="noopener noreferrer"
+                                                                                aria-label="BetXsoft'u Telegram'da aç">
+                        <img class="drawer-qr"
+                             src="~/img/betxsoft-telegram-qr.svg"
+                             alt="Telegram'daki BetXsoft için QR kodu"><span class="drawer-qr-telegram"
+                                                                             aria-hidden="true">
+                            <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                                 fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="M21.4 3.4 2.9 10.6c-1.3.5-1.3 1.2-.2 1.5l4.7 1.5 1.8 5.5c.2.7.1 1 .8 1 .5 0 .8-.2 1-.4l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.8-.8l3.1-14.7c.4-1.3-.5-1.9-1.6-1.5ZM8.2 13.3l9.2-5.8c.5-.3.9-.1.5.2l-7.6 6.9-.3 3.1-1.8-4.4Z"
+                                      fill="currentColor" stroke="none"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="drawer-footer-copy">
+                        <span>2022</span><span>BETXSOFT</span>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+    </div>
+    <!-- TOAST – Geçici bildirim mesajları -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <!-- SCRIPTS: çeviri, uygulama mantığı, görünümler, sayfa başlatma -->
+    <script src="~/js/i18n.js?v=226"></script>
+    <script src="~/js/app.js?v=241"></script>
+    <script src="~/js/views.js?v=240"></script>
+    <script src="~/js/app-runtime.js" asp-append-version="true"> </script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>

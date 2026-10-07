@@ -1,0 +1,1267 @@
+/* wettscheine-header-filter-v88:start */
+.route-coupons .wettscheine-extra-filter{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:8px;
+  margin:0 0 16px;
+}
+.route-coupons .wettscheine-extra-filter .svg-icon{
+  width:18px;
+  height:18px;
+}
+@media(max-width:520px){
+  .route-coupons .wettscheine-extra-filter{
+    width:100%;
+    min-height:44px;
+    justify-content:flex-start;
+  }
+}
+/* wettscheine-header-filter-v88:end */
+
+
+/* coupon-filter-approved-v91:start */
+.route-coupon-filters .coupon-filter-shell{
+  width:min(760px,100%);
+  margin:0 auto;
+}
+.route-coupon-filters .coupon-filter-hero{
+  display:grid;
+  grid-template-columns:72px minmax(0,1fr);
+  align-items:center;
+  gap:18px;
+  margin-bottom:16px;
+  padding:18px 20px;
+  border:1px solid #dbe4f2;
+  border-radius:16px;
+  background:
+    linear-gradient(130deg,transparent 0 72%,rgba(221,232,252,.58) 72% 82%,transparent 82%),
+    linear-gradient(135deg,#fff,#f8fbff);
+  box-shadow:0 4px 18px rgba(20,40,80,.035);
+}
+.route-coupon-filters .coupon-filter-hero-icon{
+  width:72px;
+  height:72px;
+  display:grid;
+  place-items:center;
+  border:1px solid #cbdcff;
+  border-radius:15px;
+  background:linear-gradient(145deg,#f8fbff,#edf4ff);
+  color:var(--blue);
+}
+.route-coupon-filters .coupon-filter-hero-icon .svg-icon{
+  width:36px;
+  height:36px;
+  stroke-width:2;
+}
+.route-coupon-filters .coupon-filter-hero-copy h1{
+  margin:0 0 7px;
+  font-size:28px;
+  line-height:1.08;
+  letter-spacing:-.5px;
+}
+.route-coupon-filters .coupon-filter-back{
+  border:0;
+  padding:0;
+  background:transparent;
+  color:var(--blue);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  line-height:1.2;
+  text-align:left;
+}
+.route-coupon-filters .coupon-filter-back > span{
+  font-size:20px;
+  line-height:1;
+}
+.route-coupon-filters .coupon-filter-back strong{
+  font-weight:800;
+}
+.route-coupon-filters .coupon-filter-list{
+  display:grid;
+  gap:12px;
+}
+.route-coupon-filters .coupon-filter-row{
+  display:grid;
+  grid-template-columns:54px minmax(0,1fr);
+  align-items:center;
+  gap:16px;
+  min-height:92px;
+  padding:13px 16px;
+  border:1px solid #dfe5ef;
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 3px 14px rgba(20,40,80,.028);
+}
+.route-coupon-filters .coupon-filter-row-icon{
+  width:54px;
+  height:54px;
+  display:grid;
+  place-items:center;
+  border-radius:13px;
+  background:#f0f4f9;
+  color:#081a37;
+}
+.route-coupon-filters .coupon-filter-row-icon .svg-icon{
+  width:28px;
+  height:28px;
+  stroke-width:1.9;
+}
+.route-coupon-filters .coupon-filter-field{
+  min-width:0;
+}
+.route-coupon-filters .coupon-filter-field label{
+  display:block;
+  margin-bottom:7px;
+  font-size:16px;
+  font-weight:800;
+  color:#0c1930;
+}
+.route-coupon-filters .coupon-filter-field .control{
+  height:48px;
+  border-color:#d2dcee;
+  border-radius:10px;
+  font-size:15px;
+}
+.route-coupon-filters .coupon-filter-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:14px;
+}
+.route-coupon-filters .coupon-filter-actions .btn{
+  min-height:54px;
+  font-size:16px;
+  border-radius:11px;
+}
+@media(max-width:520px){
+  .route-coupon-filters .coupon-filter-shell{
+    width:100%;
+  }
+  .route-coupon-filters .coupon-filter-hero{
+    grid-template-columns:46px minmax(0,1fr);
+    gap:10px;
+    margin-bottom:12px;
+    padding:10px 11px;
+    border-radius:12px;
+  }
+  .route-coupon-filters .coupon-filter-hero-icon{
+    width:46px;
+    height:46px;
+    border-radius:10px;
+  }
+  .route-coupon-filters .coupon-filter-hero-icon .svg-icon{
+    width:25px;
+    height:25px;
+  }
+  .route-coupon-filters .coupon-filter-hero-copy h1{
+    margin-bottom:4px;
+    font-size:19px;
+    letter-spacing:-.25px;
+  }
+  .route-coupon-filters .coupon-filter-back{
+    gap:5px;
+    font-size:11px;
+  }
+  .route-coupon-filters .coupon-filter-back > span{
+    font-size:15px;
+  }
+  .route-coupon-filters .coupon-filter-list{
+    gap:9px;
+  }
+  .route-coupon-filters .coupon-filter-row{
+    grid-template-columns:42px minmax(0,1fr);
+    gap:11px;
+    min-height:70px;
+    padding:9px 11px;
+    border-radius:11px;
+  }
+  .route-coupon-filters .coupon-filter-row-icon{
+    width:42px;
+    height:42px;
+    border-radius:10px;
+  }
+  .route-coupon-filters .coupon-filter-row-icon .svg-icon{
+    width:23px;
+    height:23px;
+  }
+  .route-coupon-filters .coupon-filter-field label{
+    margin-bottom:4px;
+    font-size:13px;
+  }
+  .route-coupon-filters .coupon-filter-field .control{
+    height:39px;
+    padding:0 11px;
+    border-radius:8px;
+    font-size:13px;
+  }
+  .route-coupon-filters .coupon-filter-actions{
+    gap:9px;
+    margin-top:10px;
+  }
+  .route-coupon-filters .coupon-filter-actions .btn{
+    min-height:46px;
+    padding:10px 12px;
+    font-size:14px;
+    border-radius:9px;
+  }
+}
+/* coupon-filter-approved-v91:end */
+
+
+/* wettscheine-slim-toggle-cards-v92:start */
+@media(max-width:520px){
+  .route-coupons .toggle-grid{
+    gap:8px;
+    margin-bottom:14px;
+  }
+  .route-coupons .toggle-card{
+    padding:8px 12px;
+    min-height:42px;
+    border-radius:9px;
+    gap:10px;
+  }
+  .route-coupons .toggle-card .switch{
+    width:38px;
+    height:22px;
+  }
+  .route-coupons .toggle-card .switch:before{
+    width:16px;
+    height:16px;
+    top:3px;
+    left:3px;
+  }
+  .route-coupons .toggle-card .switch.on:before{
+    left:19px;
+  }
+}
+/* wettscheine-slim-toggle-cards-v92:end */
+
+
+/* wettscheine-compact-search-actions-v94:start */
+@media(max-width:520px){
+  .route-coupons .wettscheine-extra-filter{
+    min-height:40px;
+    margin-bottom:11px;
+    padding:8px 12px;
+    border-radius:9px;
+    font-size:13px;
+  }
+  .route-coupons .wettscheine-extra-filter .svg-icon{
+    width:17px;
+    height:17px;
+  }
+  .route-coupons .filters.three{
+    gap:9px;
+    margin-bottom:0;
+  }
+  .route-coupons .filters .field{
+    gap:5px;
+  }
+  .route-coupons .filters .field label{
+    font-size:12px;
+  }
+  .route-coupons .filters .control{
+    height:40px;
+    padding:0 11px;
+    border-radius:8px;
+    font-size:13px;
+  }
+  .route-coupons .filter-actions{
+    gap:8px;
+    margin-top:2px;
+  }
+  .route-coupons .filter-actions .btn{
+    min-height:39px;
+    padding:7px 12px;
+    border-radius:9px;
+    font-size:13px;
+  }
+}
+/* wettscheine-compact-search-actions-v94:end */
+
+
+/* unified-subpage-top-gap-v97:start */
+@media(max-width:520px){
+  /* Keep the mobile top bar unchanged. Only reduce the content's
+     top offset on every page/subpage except the Startseite.
+     Existing internal spacing, sizes and horizontal positioning stay intact. */
+  #app > .app:not(.route-home) > .layout{
+    padding-top:8px!important;
+  }
+}
+/* unified-subpage-top-gap-v97:end */
+
+
+/* wettscheine-compact-table-v100:start */
+@media(max-width:520px){
+  .route-coupons .table-wrap{
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+  }
+  .route-coupons .data-table{
+    width:max-content;
+    min-width:0!important;
+    font-size:11.5px;
+    table-layout:auto;
+  }
+  .route-coupons .data-table th{
+    padding:9px 5px;
+    line-height:1.15;
+    font-size:11.5px;
+    font-weight:800;
+  }
+  .route-coupons .data-table td{
+    padding:8px 5px;
+    height:42px;
+    line-height:1.15;
+    vertical-align:middle;
+  }
+
+  /* Let every column use its real content width instead of reserving extra space. */
+  .route-coupons .data-table th:nth-child(1),
+  .route-coupons .data-table td:nth-child(1){
+    width:auto;
+    min-width:72px;
+    max-width:100px;
+  }
+  .route-coupons .data-table th:nth-child(2),
+  .route-coupons .data-table td:nth-child(2){
+    width:auto;
+    min-width:86px;
+  }
+  .route-coupons .data-table th:nth-child(3),
+  .route-coupons .data-table td:nth-child(3){
+    width:auto;
+    min-width:50px;
+    text-align:right;
+  }
+  .route-coupons .data-table th:nth-child(4),
+  .route-coupons .data-table td:nth-child(4){
+    width:auto;
+    min-width:54px;
+    text-align:center;
+  }
+  .route-coupons .data-table th:nth-child(5),
+  .route-coupons .data-table td:nth-child(5){
+    width:auto;
+    min-width:68px;
+    text-align:right;
+  }
+  .route-coupons .data-table th:nth-child(6),
+  .route-coupons .data-table td:nth-child(6){
+    width:auto;
+    min-width:46px;
+    text-align:center;
+  }
+  .route-coupons .data-table th:nth-child(7),
+  .route-coupons .data-table td:nth-child(7){
+    width:auto;
+    min-width:34px;
+  }
+
+  .route-coupons .data-table td:first-child,
+  .route-coupons .data-table td:first-child strong{
+    white-space:normal;
+  }
+  .route-coupons .data-table td:first-child strong{
+    display:block;
+    overflow:visible;
+    text-overflow:clip;
+    line-height:1.15;
+  }
+  .route-coupons .data-table .status{
+    padding:4px 6px;
+    border-radius:5px;
+    font-size:9px;
+    line-height:1;
+  }
+  .route-coupons .data-table .btn.small{
+    min-height:28px;
+    padding:5px 8px;
+    border-radius:7px;
+    font-size:10px;
+    line-height:1;
+  }
+}
+/* wettscheine-compact-table-v100:end */
+
+
+/* wettscheine-open-button-v102:start */
+.route-coupons .coupon-open-btn{
+  min-height:32px;
+  padding:5px 8px;
+  border:1px solid #aebfff;
+  border-radius:8px;
+  background:#f4f7ff;
+  color:#164ed8;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  font-size:11px;
+  font-weight:800;
+  line-height:1;
+  box-shadow:0 2px 7px rgba(22,78,216,.07);
+  transition:.16s ease;
+}
+.route-coupons .coupon-open-btn:hover{
+  background:#eaf0ff;
+  border-color:#7695ff;
+  box-shadow:0 4px 10px rgba(22,78,216,.12);
+}
+.route-coupons .coupon-open-btn:active{
+  transform:translateY(1px);
+}
+.route-coupons .coupon-open-eye{
+  width:16px;
+  height:16px;
+  display:grid;
+  place-items:center;
+}
+.route-coupons .coupon-open-eye .svg-icon{
+  width:16px;
+  height:16px;
+  stroke-width:1.9;
+}
+.route-coupons .coupon-open-arrow{
+  font-size:17px;
+  line-height:.8;
+  margin-left:1px;
+}
+@media(max-width:520px){
+  .route-coupons .coupon-open-btn{
+    min-height:28px;
+    padding:4px 6px;
+    gap:4px;
+    border-radius:7px;
+    font-size:9.5px;
+  }
+  .route-coupons .coupon-open-eye,
+  .route-coupons .coupon-open-eye .svg-icon{
+    width:14px;
+    height:14px;
+  }
+  .route-coupons .coupon-open-arrow{
+    font-size:15px;
+  }
+}
+/* wettscheine-open-button-v102:end */
+
+
+/* wettscheine-max-profit-emphasis-v110:start */
+.route-coupons .data-table td:nth-child(4){
+  text-align:left;
+  font-weight:800;
+}
+@media(max-width:520px){
+  .route-coupons .data-table td:nth-child(4){
+    text-align:left;
+    font-weight:800;
+  }
+}
+/* wettscheine-max-profit-emphasis-v110:end */
+
+/* wettscheine-column-order-v106:start */
+.route-coupons .coupon-row-meta{
+  display:block;
+  margin-top:3px;
+  color:#4f5968;
+  font-size:10px;
+  font-weight:600;
+  line-height:1.05;
+  white-space:nowrap;
+}
+.route-coupons .coupon-type{
+  font-size:10px;
+  font-weight:800;
+  color:#26354f;
+  white-space:nowrap;
+}
+@media(max-width:520px){
+  .route-coupons .data-table th,
+  .route-coupons .data-table td{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .route-coupons .data-table th:nth-child(1),
+  .route-coupons .data-table td:nth-child(1){
+    width:auto;
+    min-width:88px;
+    max-width:110px;
+  }
+  .route-coupons .data-table th:nth-child(2),
+  .route-coupons .data-table td:nth-child(2){
+    width:auto;
+    min-width:52px;
+    text-align:right;
+  }
+  .route-coupons .data-table th:nth-child(3),
+  .route-coupons .data-table td:nth-child(3){
+    width:auto;
+    min-width:56px;
+    text-align:center;
+  }
+  .route-coupons .data-table th:nth-child(4),
+  .route-coupons .data-table td:nth-child(4){
+    width:auto;
+    min-width:68px;
+    text-align:right;
+  }
+  .route-coupons .data-table th:nth-child(5),
+  .route-coupons .data-table td:nth-child(5){
+    width:auto;
+    min-width:46px;
+    text-align:center;
+  }
+  .route-coupons .data-table th:nth-child(6),
+  .route-coupons .data-table td:nth-child(6){
+    width:auto;
+    min-width:66px;
+    text-align:center;
+  }
+  .route-coupons .data-table th:nth-child(7),
+  .route-coupons .data-table td:nth-child(7){
+    width:auto;
+    min-width:70px;
+    text-align:left;
+  }
+}
+/* wettscheine-column-order-v106:end */
+
+
+/* wettscheine-status-cell-shading-v111:start */
+/* Very subtle status shading only for Einsatz, Status and Max. Gewinn. */
+.route-coupons .coupon-status-row.coupon-status-loss > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-loss > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-loss > td:nth-child(4){
+  background:rgba(239,68,68,.065);
+}
+.route-coupons .coupon-status-row.coupon-status-won > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-won > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-won > td:nth-child(4){
+  background:rgba(34,197,94,.065);
+}
+.route-coupons .coupon-status-row.coupon-status-cancelled > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-cancelled > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-cancelled > td:nth-child(4),
+.route-coupons .coupon-status-row.coupon-status-canceled > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-canceled > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-canceled > td:nth-child(4),
+.route-coupons .coupon-status-row.coupon-status-storniert > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-storniert > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-storniert > td:nth-child(4){
+  background:rgba(59,130,246,.065);
+}
+.route-coupons .coupon-status-row.coupon-status-sold > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-sold > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-sold > td:nth-child(4),
+.route-coupons .coupon-status-row.coupon-status-verkauft > td:nth-child(2),
+.route-coupons .coupon-status-row.coupon-status-verkauft > td:nth-child(3),
+.route-coupons .coupon-status-row.coupon-status-verkauft > td:nth-child(4){
+  background:rgba(245,158,11,.07);
+}
+/* wettscheine-status-cell-shading-v111:end */
+
+
+/* coupon-detail-mobile-horizontal-scroll-v120:start */
+@media(max-width:520px){
+  /* Horizontal swipe only for the Wett-Details table. */
+  .route-coupon-detail .table-card .table-wrap{
+    width:100%;
+    max-width:100%;
+    overflow-x:auto!important;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    touch-action:pan-x pan-y;
+  }
+  .route-coupon-detail .table-card .data-table{
+    min-width:820px;
+    width:100%;
+    table-layout:auto;
+  }
+}
+/* coupon-detail-mobile-horizontal-scroll-v120:end */
+
+
+/* coupon-detail-title-29px-v121:start */
+.route-coupon-detail .ticket-head h1{
+  font-size:20px!important;
+}
+/* coupon-detail-title-29px-v121:end */
+
+
+/* coupon-detail-approved-table-v122:start */
+.route-coupon-detail .coupon-detail-table .data-table{
+  min-width:1050px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th,
+.route-coupon-detail .coupon-detail-table .data-table td{
+  padding-left:14px;
+  padding-right:14px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(1),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(1){
+  min-width:205px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(2),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(2){
+  min-width:135px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(3),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(3){
+  min-width:105px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(4),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(4){
+  min-width:72px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(5),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(5){
+  min-width:76px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(6),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(6){
+  min-width:108px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(7),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(7){
+  min-width:190px;
+}
+.route-coupon-detail .coupon-detail-table .data-table th:nth-child(8),
+.route-coupon-detail .coupon-detail-table .data-table td:nth-child(8){
+  min-width:92px;
+}
+.route-coupon-detail .bet-team-cell{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+}
+.route-coupon-detail .bet-team-lines,
+.route-coupon-detail .bet-league-lines{
+  display:grid;
+  gap:3px;
+  line-height:1.2;
+  white-space:normal;
+}
+.route-coupon-detail .bet-status-dot{
+  width:9px;
+  height:9px;
+  margin-top:3px;
+  border-radius:50%;
+  flex:0 0 9px;
+}
+.route-coupon-detail .bet-status-dot.loss{background:#EF4444}
+.route-coupon-detail .bet-status-dot.won{background:#22C55E}
+.route-coupon-detail .bet-status-dot.cancelled{background:#3B82F6}
+.route-coupon-detail .bet-detail-bold{
+  font:inherit;
+  font-weight:800;
+}
+.route-coupon-detail .status.won{
+  background:#e3f7eb;
+  color:#087d37;
+}
+.route-coupon-detail .status.cancelled{
+  background:#e8f1ff;
+  color:#1767d6;
+}
+@media(max-width:520px){
+  .route-coupon-detail .coupon-detail-table .table-wrap{
+    width:100%;
+    max-width:100%;
+    overflow-x:auto!important;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    touch-action:pan-x pan-y;
+  }
+  .route-coupon-detail .coupon-detail-table .data-table{
+    min-width:1050px!important;
+    width:max-content;
+  }
+}
+/* coupon-detail-approved-table-v122:end */
+
+
+/* coupon-detail-back-link-highlight-v123:start */
+.route-coupon-detail .back-link{
+  min-height:38px;
+  padding:8px 12px;
+  margin-bottom:18px;
+  border:1px solid #c9d7ff;
+  border-radius:10px;
+  background:#f3f6ff;
+  color:#0b50ea;
+  font-weight:800;
+  align-items:center;
+  box-shadow:0 2px 8px rgba(11,80,234,.06);
+}
+.route-coupon-detail .back-link:hover{
+  background:#eaf0ff;
+  border-color:#9eb7ff;
+}
+/* coupon-detail-back-link-highlight-v123:end */
+
+
+/* coupon-detail-title-status-v126:start */
+.route-coupon-detail .ticket-title-label,
+.route-coupon-detail .ticket-title-number{
+  display:block;
+}
+.route-coupon-detail .ticket-title-number{
+  margin-top:2px;
+}
+.route-coupon-detail .ticket-meta .ticket-status-loss{
+  color:#EF4444;
+}
+.route-coupon-detail .ticket-meta .ticket-status-won{
+  color:#22C55E;
+}
+.route-coupon-detail .ticket-meta .ticket-status-open{
+  color:#111;
+}
+.route-coupon-detail .ticket-meta .ticket-status-cancelled{
+  color:#3B82F6;
+}
+/* coupon-detail-title-status-v126:end */
+
+
+/* coupon-detail-user-heading-v127:start */
+.route-coupon-detail .ticket-head > strong{
+  margin-left:auto;
+  margin-right:15px;
+  font-size:18px;
+  font-weight:800;
+  text-align:right;
+  white-space:nowrap;
+}
+@media(max-width:520px){
+  .route-coupon-detail .ticket-head > strong{
+    margin-left:auto;
+    margin-right:15px;
+    font-size:18px;
+    font-weight:800;
+    text-align:right;
+    white-space:nowrap;
+  }
+}
+/* coupon-detail-user-heading-v127:end */
+
+
+/* wettscheine-selected-row-v132:start */
+.route-coupons .coupon-status-row.coupon-selected-row > td{
+  background-image:linear-gradient(rgba(6,72,245,.045),rgba(6,72,245,.045));
+  box-shadow:inset 0 1px 0 rgba(6,72,245,.18),inset 0 -1px 0 rgba(6,72,245,.18);
+}
+.route-coupons .coupon-status-row.coupon-selected-row > td:first-child{
+  box-shadow:inset 3px 0 0 #6f8ff7,inset 0 1px 0 rgba(6,72,245,.18),inset 0 -1px 0 rgba(6,72,245,.18);
+}
+/* wettscheine-selected-row-v132:end */
+
+
+/* turnover-functional-layout-v134:start */
+.route-turnover .turnover-period-card,
+.route-turnover .turnover-summary-card,
+.route-turnover .turnover-shop-card,
+.route-turnover .turnover-records-card{
+  width:100%;
+}
+.route-turnover .turnover-date-tabs{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:8px;
+  margin-bottom:10px;
+}
+.route-turnover .turnover-date-tabs .tab{
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+}
+.route-turnover .turnover-custom-date{
+  margin-bottom:0;
+}
+.route-turnover .turnover-date-range{
+  margin:10px 0 0;
+}
+.route-turnover .turnover-section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding-bottom:10px;
+}
+.route-turnover .turnover-section-head small{
+  display:block;
+  margin-top:4px;
+}
+.route-turnover .turnover-record-count{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:700;
+  white-space:nowrap;
+}
+.route-turnover .revenue-card .svg-icon{
+  width:24px;
+  height:24px;
+}
+@media(max-width:520px){
+  .route-turnover .page-head{
+    margin-bottom:18px;
+  }
+  .route-turnover .turnover-period-card{
+    padding:16px;
+  }
+  .route-turnover .turnover-period-card .section-title{
+    margin-bottom:12px;
+  }
+  .route-turnover .turnover-date-tabs{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:7px;
+  }
+  .route-turnover .turnover-date-tabs .tab{
+    min-height:40px;
+    padding:8px 6px;
+    font-size:12px;
+  }
+  .route-turnover .turnover-custom-date{
+    height:40px;
+    font-size:12px;
+  }
+  .route-turnover .turnover-date-range{
+    grid-template-columns:1fr 1fr;
+    padding:9px;
+    gap:7px;
+  }
+  .route-turnover .turnover-date-range button{
+    grid-column:1/-1;
+    min-height:36px;
+  }
+  .route-turnover .revenue-card{
+    min-height:132px;
+    padding:14px 8px 12px;
+  }
+  .route-turnover .revenue-card .bubble{
+    width:42px;
+    height:42px;
+    margin-bottom:9px;
+    font-size:18px;
+  }
+  .route-turnover .revenue-card label{
+    margin-bottom:6px;
+    font-size:11px;
+  }
+  .route-turnover .revenue-card strong{
+    font-size:16px;
+  }
+  .route-turnover .revenue-card .spark{
+    width:58px;
+    height:14px;
+    margin-top:8px;
+  }
+  .route-turnover .turnover-section-head{
+    padding:14px 12px 9px;
+  }
+  .route-turnover .turnover-section-head .section-title{
+    font-size:15px;
+  }
+  .route-turnover .turnover-shop-card .btn{
+    min-height:34px;
+    padding:6px 9px;
+    font-size:10px;
+  }
+  .route-turnover .record{
+    grid-template-columns:1.25fr repeat(3,1fr) 12px;
+    gap:5px;
+    padding:10px 8px;
+    font-size:9.5px;
+  }
+}
+/* turnover-functional-layout-v134:end */
+
+
+/* turnover-summary-approved-design-v136:start */
+.route-turnover .turnover-summary-card{
+  border:0;
+  background:transparent;
+  box-shadow:none;
+  overflow:visible;
+}
+.route-turnover .turnover-summary-card .revenue-top{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.route-turnover .turnover-summary-card .revenue-card{
+  position:relative;
+  overflow:hidden;
+  min-height:160px;
+  padding:22px 22px 20px;
+  border:1px solid #e3e8f1;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 8px 22px rgba(20,40,80,.055);
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  grid-template-rows:auto 1fr;
+  column-gap:14px;
+  row-gap:18px;
+  align-items:center;
+  text-align:left;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(5){
+  grid-column:1/-1;
+}
+.route-turnover .turnover-summary-card .revenue-card::after{
+  content:"";
+  position:absolute;
+  right:-8%;
+  bottom:-34%;
+  width:72%;
+  height:74%;
+  border-radius:62% 0 0 0;
+  opacity:.6;
+  transform:rotate(-5deg);
+  pointer-events:none;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(1){
+  background:linear-gradient(135deg,#ffffff 0%,#f7fffb 100%);
+  border-color:#d7f3e5;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(1)::after{
+  background:linear-gradient(135deg,rgba(34,197,94,.02),rgba(34,197,94,.22));
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(2){
+  background:linear-gradient(135deg,#ffffff 0%,#fff8fa 100%);
+  border-color:#f6dbe2;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(2)::after{
+  background:linear-gradient(135deg,rgba(255,20,56,.02),rgba(255,20,56,.20));
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(3){
+  background:linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
+  border-color:#d9e4ff;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(3)::after{
+  background:linear-gradient(135deg,rgba(6,72,245,.02),rgba(6,72,245,.18));
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(4){
+  background:linear-gradient(135deg,#ffffff 0%,#fafbfd 100%);
+  border-color:#e0e5ed;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(4)::after{
+  background:linear-gradient(135deg,rgba(102,112,133,.02),rgba(102,112,133,.16));
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(5){
+  background:linear-gradient(135deg,#fffefa 0%,#fff9ec 100%);
+  border-color:#f3dfb2;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(5)::after{
+  width:60%;
+  height:86%;
+  right:-3%;
+  bottom:-43%;
+  background:linear-gradient(135deg,rgba(214,145,0,.02),rgba(214,145,0,.22));
+}
+.route-turnover .turnover-summary-card .revenue-card .bubble{
+  position:relative;
+  z-index:1;
+  width:54px;
+  height:54px;
+  margin:0;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#f1f4f9;
+  font-size:22px;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(1) .bubble{
+  background:#dcf9e9;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(2) .bubble{
+  background:#ffe2e8;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(3) .bubble{
+  background:#e2ecff;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(4) .bubble{
+  background:#e9eef5;
+}
+.route-turnover .turnover-summary-card .revenue-card:nth-child(5) .bubble{
+  background:#ffefc9;
+  color:#d18a00!important;
+}
+.route-turnover .turnover-summary-card .revenue-card label{
+  position:relative;
+  z-index:1;
+  margin:0;
+  display:block;
+  font-size:17px;
+  line-height:1.2;
+  font-weight:800;
+  color:#101828;
+}
+.route-turnover .turnover-summary-card .revenue-card strong{
+  position:relative;
+  z-index:1;
+  grid-column:1/-1;
+  align-self:start;
+  font-size:32px;
+  line-height:1;
+  font-weight:850;
+  letter-spacing:-.7px;
+}
+.route-turnover .turnover-summary-card .revenue-card .spark{
+  display:none;
+}
+@media(max-width:520px){
+  .route-turnover .turnover-summary-card .revenue-top{
+    gap:9px;
+  }
+  .route-turnover .turnover-summary-card .revenue-card{
+    min-height:107px;
+    padding:14px 12px 7px;
+    border-radius:13px;
+    column-gap:9px;
+    row-gap:11px;
+  }
+  .route-turnover .turnover-summary-card .revenue-card .bubble{
+    width:38px;
+    height:38px;
+    font-size:17px;
+  }
+  .route-turnover .turnover-summary-card .revenue-card .bubble .svg-icon{
+    width:20px;
+    height:20px;
+  }
+  .route-turnover .turnover-summary-card .revenue-card label{
+    font-size:12px;
+  }
+  .route-turnover .turnover-summary-card .revenue-card strong{
+    font-size:21px;
+    letter-spacing:-.4px;
+  }
+  .route-turnover .turnover-summary-card .revenue-card:nth-child(5){
+    min-height:103px;
+  }
+}
+/* turnover-summary-approved-design-v136:end */
+
+
+/* turnover-independent-till-v138:start */
+.route-turnover .turnover-reset-table{
+  min-width:680px;
+}
+.route-turnover .turnover-reset-table th:first-child,
+.route-turnover .turnover-reset-table td:first-child{
+  min-width:64px;
+}
+.route-turnover .turnover-reset-table td{
+  vertical-align:middle;
+}
+@media(max-width:520px){
+  .route-turnover .turnover-reset-table{
+    min-width:620px;
+  }
+  .route-turnover .turnover-reset-table th,
+  .route-turnover .turnover-reset-table td{
+    padding:9px 8px;
+  }
+  .route-turnover .turnover-reset-table th:first-child,
+  .route-turnover .turnover-reset-table td:first-child{
+    min-width:60px;
+  }
+}
+/* turnover-independent-till-v138:end */
+
+
+/* turnover-records-pagination-v139:start */
+.route-turnover .turnover-record-pagination{
+  justify-content:flex-end;
+}
+.route-turnover .turnover-reset-time{
+  font-weight:400;
+}
+/* turnover-records-pagination-v139:end */
+
+
+/* turnover-shop-compact-columns-v144:start */
+@media(max-width:520px){
+  .route-turnover .turnover-shop-card .data-table{
+    min-width:328px;
+  }
+  .route-turnover .turnover-shop-card .data-table th,
+  .route-turnover .turnover-shop-card .data-table td{
+    padding-left:4px;
+    padding-right:4px;
+  }
+  .route-turnover .turnover-shop-card .data-table th:first-child,
+  .route-turnover .turnover-shop-card .data-table td:first-child{
+    width:1%;
+    padding-right:2.4px;
+  }
+  .route-turnover .turnover-shop-card .data-table th:nth-child(2),
+  .route-turnover .turnover-shop-card .data-table td:nth-child(2){
+    padding-left:2.4px;
+  }
+}
+/* turnover-shop-compact-columns-v144:end */
+
+
+/* turnover-reset-button-v147:start */
+.route-turnover [data-reset-turnover]{
+  height:50px;
+  min-height:50px;
+  box-sizing:border-box;
+  padding:0 16px 0 10px;
+  font-size:20px;
+  font-weight:850;
+  line-height:1.15;
+  letter-spacing:.1px;
+  border-radius:14px;
+  gap:9px;
+  background:#fff;
+  color:#000;
+  border:1px solid #cfd8ff;
+  box-shadow:0 2px 6px rgba(36,72,242,.06);
+}
+.route-turnover [data-reset-turnover] .turnover-reset-icon{
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  border-radius:50%;
+  background:#eef4ff;
+  color:var(--blue);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.route-turnover [data-reset-turnover] .turnover-reset-icon .svg-icon{
+  width:24px;
+  height:24px;
+  stroke-width:2.2;
+}
+.route-turnover [data-reset-turnover] > span:last-child{
+  color:#000!important;
+}
+/* turnover-reset-button-v147:end */
+
+
+/* turnover-records-deposit-align-v162:start */
+@media(max-width:520px){
+  .route-turnover .turnover-reset-table th:first-child,
+  .route-turnover .turnover-reset-table td:first-child{
+    padding-right:0;
+  }
+  .route-turnover .turnover-reset-table th:nth-child(2),
+  .route-turnover .turnover-reset-table td:nth-child(2){
+    padding-left:0;
+    position:static;
+    left:auto;
+    text-indent:-18px;
+  }
+}
+/* turnover-records-deposit-align-v162:end */
+
+
+/* home-mobile-vertical-space-redistribution-v172:start */
+@media(max-width:520px){
+  /*
+    Split the previously bottom-only flexible free space equally above and
+    below the home content. This moves exactly half of that free space above
+    the quick-action cards without changing any card/section dimensions.
+  */
+  .route-home .layout{
+    display:flex;
+    flex-direction:column;
+  }
+  .route-home .layout::before,
+  .route-home .layout::after{
+    content:"";
+    display:block;
+    flex:1 1 0;
+    min-height:0;
+    pointer-events:none;
+  }
+  .route-home .quick-grid,
+  .route-home .dash-grid{
+    flex:0 0 auto;
+  }
+}
+/* home-mobile-vertical-space-redistribution-v172:end */
+
+
+/* turnover-reset-confirm-v175:start */
+.turnover-reset-confirm-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:500;
+  display:grid;
+  place-items:center;
+  padding:20px;
+  background:rgba(5,13,30,.38);
+  backdrop-filter:blur(2px);
+}
+.turnover-reset-confirm{
+  width:min(430px,100%);
+  border:1px solid #e1e6ef;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 24px 60px rgba(10,24,50,.22);
+  padding:24px;
+}
+.turnover-reset-confirm h3{
+  margin:0 0 10px;
+  color:#111827;
+  font-size:21px;
+  line-height:1.2;
+  font-weight:850;
+}
+.turnover-reset-confirm p{
+  margin:0;
+  color:#5f6b7d;
+  font-size:14px;
+  line-height:1.55;
+}
+.turnover-reset-confirm-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:22px;
+}
+.turnover-reset-confirm-actions .btn{
+  min-height:42px;
+}
+@media(max-width:520px){
+  .turnover-reset-confirm-backdrop{
+    padding:16px;
+  }
+  .turnover-reset-confirm{
+    border-radius:14px;
+    padding:20px 18px 18px;
+  }
+  .turnover-reset-confirm h3{
+    font-size:19px;
+  }
+  .turnover-reset-confirm p{
+    font-size:13px;
+  }
+  .turnover-reset-confirm-actions{
+    flex-direction:column-reverse;
+    gap:8px;
+    margin-top:20px;
+  }
+  .turnover-reset-confirm-actions .btn{
+    width:100%;
+    min-height:44px;
+  }
+}
+/* turnover-reset-confirm-v175:end */
+
+

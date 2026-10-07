@@ -1,0 +1,352 @@
+﻿      <!-- MAIN – Sayfa içeriği alanı -->
+<main class="layout">
+    <!-- Sayfa başlığı: ikon, başlık, açıklama -->
+    <div class="page-head">
+        <div class="page-icon">
+            <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true" fill="none"
+                 stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                 stroke-linejoin="round">
+                <circle cx="9" cy="8" r="3"></circle>
+                <path d="M3.5 19c.7-3.1 2.6-4.8 5.5-4.8 1.3 0 2.4.3 3.3 1M17 14a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm2.2 5.2L22 22">
+                </path>
+            </svg>
+        </div>
+        <div>
+            <h1>Müşteri Arama</h1>
+            <p>Müşterilerinizi yönetin.</p>
+        </div>
+        <div class="head-action">
+            <div class="customers-head-actions">
+                <button class="btn" data-go="create-user">＋ Yeni Müşteri Oluştur</button><button class="page-close" data-close-page="" aria-label="Müşteri Aramayı Kapat"
+                                                                                                 title="Kapat">
+                    <svg class="svg-icon" viewbox="0 0 24 24" aria-hidden="true"
+                         fill="none" stroke="currentcolor" stroke-width="1.8" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M5 5l14 14M19 5 5 19"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <section class="card card-pad customers-filter-card">
+        <div class="filters">
+            <div class="field">
+                <label>ID</label><input class="control" placeholder="örn. 4590"
+                                        data-customer-id-filter="" value="">
+            </div>
+            <div class="field">
+                <label>Kullanıcı Adı</label><input class="control" placeholder="örn. David"
+                                                   data-customer-name-filter="" value="">
+            </div>
+            <div class="field">
+                <label>Durum</label><select class="control" data-customer-status-filter="">
+                    <option selected value="Alle">
+                        Tümü
+                    </option>
+                    <option value="Aktiv">
+                        Aktif
+                    </option>
+                    <option value="Gesperrt">
+                        Engelli
+                    </option>
+                </select>
+            </div>
+            <div class="filter-actions">
+                <button class="btn" data-apply-customer="">Filtrele</button><button class="btn secondary" data-reset-customer="">
+                    Sıfırla
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="card table-card customers-table-card" style="margin-top:16px">
+        <div class="table-wrap">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Kullanıcı Adı</th>
+                        <th>Bakiye</th>
+                        <th>Durum</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="" data-customer-row="6121">
+                        <td>6121</td>
+                        <td><strong>Murat78</strong></td>
+                        <td>845,50</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6121">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6121">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6122">
+                        <td>6122</td>
+                        <td><strong>Selim88</strong></td>
+                        <td>620,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6122">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6122">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6123">
+                        <td>6123</td>
+                        <td><strong>Burak1907</strong></td>
+                        <td>410,75</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6123">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6123">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6124">
+                        <td>6124</td>
+                        <td><strong>Emre34</strong></td>
+                        <td>305,40</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6124">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6124">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6125">
+                        <td>6125</td>
+                        <td><strong>CanKaya</strong></td>
+                        <td>275,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6125">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6125">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6126">
+                        <td>6126</td>
+                        <td><strong>Serkan10</strong></td>
+                        <td>198,60</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6126">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6126">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6127">
+                        <td>6127</td>
+                        <td><strong>Mehmet06</strong></td>
+                        <td>155,20</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6127">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6127">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6128">
+                        <td>6128</td>
+                        <td><strong>Eren27</strong></td>
+                        <td>119,90</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6128">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6128">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6129">
+                        <td>6129</td>
+                        <td><strong>Kerem44</strong></td>
+                        <td>88,40</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6129">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6129">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6130">
+                        <td>6130</td>
+                        <td><strong>Deniz81</strong></td>
+                        <td>64,75</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6130">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6130">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6131">
+                        <td>6131</td>
+                        <td><strong>Onur23</strong></td>
+                        <td>52,30</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6131">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6131">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="4258">
+                        <td>4258</td>
+                        <td><strong>Toni1234</strong></td>
+                        <td>40,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="4258">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="4258">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="901">
+                        <td>901</td>
+                        <td><strong>Sahin</strong></td>
+                        <td>40,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="901">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="901">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6132">
+                        <td>6132</td>
+                        <td><strong>Yusuf55</strong></td>
+                        <td>34,80</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6132">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6132">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="800">
+                        <td>800</td>
+                        <td><strong>akdag67</strong></td>
+                        <td>25,63</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="800">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="800">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="4638">
+                        <td>4638</td>
+                        <td><strong>David</strong></td>
+                        <td>20,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="4638">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="4638">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="6133">
+                        <td>6133</td>
+                        <td><strong>Ahmet11</strong></td>
+                        <td>18,25</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="6133">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="6133">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="1073">
+                        <td>1073</td>
+                        <td><strong>Halil2</strong></td>
+                        <td>13,97</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="1073">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="1073">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="2258">
+                        <td>2258</td>
+                        <td><strong>Ali elmali</strong></td>
+                        <td>10,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="2258">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="2258">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="" data-customer-row="1567">
+                        <td>1567</td>
+                        <td><strong>jassin</strong></td>
+                        <td>9,00</td>
+                        <td><span class="status active">Aktif</span></td>
+                        <td>
+                            <button class="btn small outline" data-edit-customer="1567">Düzenle</button>
+                            <button class="btn small secondary" data-customer-history="1567">
+                                Hesap
+                                Geçmişi
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-bottom customer-table-bottom">
+            <span>24 Müşteriler içinden 1–20 gösteriliyor</span>
+            <div class="pagination">
+                <button class="page-btn" data-customer-page="1" disabled>‹</button><button class="page-btn active" data-customer-page="1">
+                    1
+                </button><button class="page-btn"
+                                 data-customer-page="2">
+                    2
+                </button><button class="page-btn"
+                                 data-customer-page="2">
+                    ›
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
